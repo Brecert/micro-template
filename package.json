@@ -1,0 +1,23 @@
+{
+  "name": "@brecert/micro-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "types": "publish/replace.d.ts",
+  "module": "publish/esm/replace.js",
+  "browser": "publish/esm/replace.js",
+  "repository": "https://github.com/Brecert/micro-template.git",
+  "author": "brecert <11599528+Brecert@users.noreply.github.com>",
+  "license": "MIT",
+  "files": [
+    "publish/esm/*",
+    "publish/node/*",
+    "publish/replace.d.ts"
+  ],
+  "scripts": {
+    "build": "npm run build:tsc",
+    "build:tsc": "npm run build:tsc:types && npm run build:tsc:esm && npm run build:tsc:node",
+    "build:tsc:types": "tsc --build publish/configs/tsconfig.types.json",
+    "build:tsc:esm": "tsc --build publish/configs/tsconfig.esm.json",
+    "build:tsc:node": "tsc --build publish/configs/tsconfig.node.json"
+  }
+}
