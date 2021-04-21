@@ -1,11 +1,11 @@
 {
-  "name": "@brecert/micro-template",
-  "version": "1.0.0",
+  "name": "@brecert/micro_template",
+  "version": "1.0.1",
   "main": "index.js",
   "types": "publish/replace.d.ts",
   "module": "publish/esm/replace.js",
   "browser": "publish/esm/replace.js",
-  "repository": "https://github.com/Brecert/micro-template.git",
+  "repository": "https://github.com/Brecert/micro_template.git",
   "author": "brecert <11599528+Brecert@users.noreply.github.com>",
   "license": "MIT",
   "files": [
