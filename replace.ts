@@ -4,8 +4,10 @@ const escapeRegExp = (text: string) =>
 export const replace = (text: string, props: Record<string, string>) =>
   text.replace(
     new RegExp(
-      String.raw`(?<!\\){(${escapeRegExp(Object.keys(props).join("|"))})}|\\{`,
-      "g",
+      String.raw`(?<!\\){(${Object.keys(props)
+        .map(escapeRegExp)
+        .join("|")})}|\\{`,
+      "g"
     ),
-    (_, name) => name ? props[name] : "{",
+    (_, name) => (name ? props[name] : "{")
   );

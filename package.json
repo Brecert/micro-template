@@ -1,6 +1,6 @@
 {
   "name": "@brecert/micro_template",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "types": "publish/replace.d.ts",
   "module": "publish/esm/replace.js",
@@ -19,5 +19,8 @@
     "build:tsc:types": "tsc --build publish/configs/tsconfig.types.json",
     "build:tsc:esm": "tsc --build publish/configs/tsconfig.esm.json",
     "build:tsc:node": "tsc --build publish/configs/tsconfig.node.json"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.3"
   }
 }
